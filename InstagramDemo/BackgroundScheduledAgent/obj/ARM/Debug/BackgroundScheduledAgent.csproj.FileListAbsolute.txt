@@ -1,0 +1,12 @@
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\BackgroundScheduledAgent.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\BackgroundScheduledAgent.pdb
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\CaledosLab.Portable.Logging.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\Facebook.Client.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\Facebook.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\Hammock.WindowsPhone.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\Newtonsoft.Json.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\System.Net.Http.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\Bin\ARM\Debug\Newtonsoft.Json.xml
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\obj\ARM\Debug\BackgroundScheduledAgent.csprojResolveAssemblyReference.cache
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\obj\ARM\Debug\BackgroundScheduledAgent.dll
+C:\Users\ymoc\Desktop\Mobile Applications\InstagramDemo\BackgroundScheduledAgent\obj\ARM\Debug\BackgroundScheduledAgent.pdb

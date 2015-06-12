@@ -1,0 +1,66 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="InstagramDemo.View.InstagramPage"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+    xmlns:library="clr-namespace:SlideView.Library;assembly=SlideView.Library"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit" 
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" 
+    xmlns:rlb="clr-namespace:InstagramDemo.Data.PullToRefresh"
+    xmlns:lzyload="clr-namespace:InstagramDemo.Data.LazyLoading" 
+    xmlns:Views="clr-namespace:InstagramDemo.Data"
+    xmlns:Code4funToolkit="clr-namespace:Coding4Fun.Toolkit.Controls;assembly=Coding4Fun.Toolkit.Controls"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid>
+            <Grid x:Name="ContentPanel" Background="Gray" Margin="0,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <phone:WebBrowser Grid.Row="1" Margin="-6,0,0,1" x:Name="loginBrowserControl" Visibility="Collapsed" Navigated="loginBrowserControl_Navigated" Navigating="loginBrowserControl_Navigating"  IsScriptEnabled="True"/>
+            </Grid>
+        </Grid>
+
+        <Code4funToolkit:ProgressOverlay  Margin="0,0,0,0" Name="progressOverlay1"   Visibility="Collapsed" Grid.RowSpan="5">
+            <StackPanel >
+                <ProgressBar Grid.RowSpan="4" Margin="0,2,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FlowDirection="LeftToRight" IsIndeterminate="True" Visibility="Visible" Foreground="White"  Height="10" Width="480" x:Name="standardProgressBar" />
+                <TextBlock Text="Loading..." FontSize="21" FontWeight="Normal" Foreground="White" HorizontalAlignment="Center"/>
+            </StackPanel >
+        </Code4funToolkit:ProgressOverlay>
+
+        <Code4funToolkit:ProgressOverlay  Grid.RowSpan="6" Name="progressOverlay"  Visibility="Collapsed">
+        </Code4funToolkit:ProgressOverlay>
+    </Grid>
+
+</phone:PhoneApplicationPage>
